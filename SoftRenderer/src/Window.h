@@ -2,7 +2,15 @@
 #define M_WINDOW_H
 
 #include <SDL.h>
+#include <SDL_image.h>
 #include <stdio.h>
+#include "Texture.h"
+#include "Renderer.h"
+#include "vertexShader.h"
+#include "fragmentShader.h"
+#include "Model.h"
+#include "Camera.h"
+#include <chrono>
 
 class Window
 {
@@ -12,14 +20,21 @@ public:
 	virtual ~Window();
 private:
 	void init();
+	DrawParams initData();
 	void uninit();
 private:
 	SDL_Window* window = NULL;
 	SDL_Surface* screenSurface = NULL;
-	SDL_Surface* renderSurface = NULL;
+	Renderer renderer;
+	Model model;
+
+	Camera camera;
+
 	bool hasInited = false;
-	unsigned int width = 800;
-	unsigned int height = 600;
+	unsigned int width = 700;
+	unsigned int height = 700;
+
+	std::chrono::system_clock::time_point initTime;
 };
 
 #endif

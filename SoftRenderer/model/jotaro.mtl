@@ -1,0 +1,24 @@
+# Blender MTL File: 'jotaro.blend'
+# Material Count: 2
+
+newmtl JotaroDIUEye
+Ns 96.078431
+Ka 0.003000 0.003000 0.003000
+Kd 0.736223 0.631736 0.622159
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+map_Kd jotarodiueye.jpg
+illum 2
+
+newmtl JotaroDIUMain
+Ns 96.078431
+Ka 0.003000 0.003000 0.003000
+Kd 0.712654 0.456026 0.402190
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+map_Kd jotarodiumain.jpg
+illum 2
